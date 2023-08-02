@@ -280,28 +280,28 @@
 			align-items: center;
 		}
 
-		.cs-logo {
-			width: 40%;
-			max-width: calc(146 / 16 * 1rem);
-			height: 100%;
-			margin: 0 auto 0 0;
-			padding: 0;
-			/* prevents padding from affecting height and width */
-			box-sizing: border-box;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			z-index: 10;
+		 .cs-logo {
+		 	width: 40%;
+		 	max-width: calc(146 / 16 * 1rem);
+		 	height: 100%;
+		 	margin: 0 auto 0 0;
+		 	padding: 0;
+		 	/* prevents padding from affecting height and width */
+		 	box-sizing: border-box;
+		 	display: flex;
+		 	justify-content: center;
+		 	align-items: center;
+		 	z-index: 10;
 
-			img {
-				width: 100%;
-				height: 100%;
-				/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-				object-fit: contain;
-				/* places the image to the left edge of the parent */
-				object-position: left;
-			}
-		}
+		 	img {
+		 		width: 80%;
+		 		height: 100%;
+		 		/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+		 		object-fit: contain;
+		 		/* places the image to the left edge of the parent */
+		 		object-position: left;
+		 	}
+		 }
 
 		.cs-toggle {
 			/* 44px - 48px */
@@ -488,12 +488,12 @@
 	body.dark-mode {
 		#cs-navigation {
 			background-color: var(--dark);
-
 			.cs-logo {
 				/* makes it white */
-				filter: grayscale(1) brightness(1000%);
+				// filter: grayscale(1) brightness(1000%);
+				-webkit-filter: invert(1) contrast(500%);
 			}
-
+			
 			.cs-line {
 				background-color: #fff;
 			}
@@ -766,9 +766,9 @@
 		}
 
 		.cs-logo {
-			width: 18.4%;
-			max-width: calc(350 / 16 * 1rem);
-			height: calc(65 / 16 * 1rem);
+			width: 100px;
+			// max-width: calc(350 / 16 * 1rem);
+			height: 100px;
 			/* margin-right auto pushes everything away from it to the right */
 			margin: 0 auto 0 0;
 			padding: 0;
@@ -778,8 +778,8 @@
 			z-index: 100;
 
 			img {
-				width: 100%;
-				height: 100%;
+				width: 200%;
+				height: 200%;
 				/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
 				object-fit: contain;
 			}
@@ -849,7 +849,8 @@
 
 			.cs-logo {
 				/* makes it turn white */
-				filter: grayscale(1) brightness(1000%);
+				// filter: grayscale(1) brightness(1000%);
+				-webkit-filter: invert(1) contrast(500%);
 			}
 
 			.cs-li-link {
@@ -1110,15 +1111,15 @@
 			margin-bottom: calc(50 / 16 * 1rem);
 			text-align: center;
 			.logo {
-				display: inline-block;
+				display: inline;
 				margin: auto;
-				width: auto;
-				height: calc(32 / 16 * 1em);
+				 width: auto;
+				 height: calc(32 / 16 * 1em);
 				margin-bottom: calc(30 / 16 * 1em);
 				text-align: center;
 
 				img {
-					width: auto;
+					width: 100%;
 					height: 100%;
 					display: block;
 				}
@@ -1283,11 +1284,13 @@
 			margin: 0;
 			width: calc(609 / 16 * 1rem);
 			max-width: none;
+			margin-top: 500;
 			.lists {
 				width: 96%;
 				max-width: calc(769 / 16 * 1rem);
 				margin: 0;
 				max-width: initial;
+				
 
 				ul {
 					&:nth-of-type(3) {
