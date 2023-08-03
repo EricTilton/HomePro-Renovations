@@ -1138,7 +1138,7 @@
 		}
 
 		.right-section {
-			width: 96%;
+			width: 100%;
 			max-width: calc(407 / 16 * 1rem);
 			margin: auto;
 			.lists {
@@ -1272,6 +1272,7 @@
 				text-align: left;
 				margin-left: 0;
 				height: calc(40 / 16 * 1rem);
+				display: inline;
 			}
 
 			p {
