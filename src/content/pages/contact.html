@@ -10,13 +10,14 @@ permalink: 'contact/'
 
 {% block head %}
     <link rel="stylesheet" href="/css/contact.css">
-
+    
 <script>
-    let form = document.getElementById("cs-form")[0];
-    form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Form Submitted!");
-});
+    
+ function formsubmitted(){
+    
+   alert("We'll be in contact shortly!")
+          
+ }
 </script>
 {% endblock %}
 
@@ -41,7 +42,7 @@ permalink: 'contact/'
 
     <section id="cs-contact">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
+            <form onsubmit="return formsubmitted()" id="cs-form" name="Contact Form" method="post">
                 <div class="cs-content">
                     
                     <h2 class="cs-title">Get in Touch</h2>
@@ -69,7 +70,7 @@ permalink: 'contact/'
                     Message
                     <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
                 </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
+                <button class="cs-button-solid" id="submit" type="submit">Submit Message</button>
             </form>
             <div class="cs-right-section">
                 <!--Email-->
