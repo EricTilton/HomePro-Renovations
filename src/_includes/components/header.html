@@ -22,7 +22,9 @@
             <!-- This also allows for easy substitution of CodeStitch navigations. Just replace the .cs-ul-wrapper in the new navigation with this one -->
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    
                     {% set navPages = collections.all | eleventyNavigation %}
+                    
                     <!-- Loop through all pages with a eleventyNavigation in the frontmatter -->
                     {% for entry in navPages %}
                         <!-- Define a hasChild variable to make it easier to test what links are dropdowns-->
@@ -38,6 +40,7 @@
                                     <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                                 {% endif %}
                             </a>
+                            
 
                             <!-- Dropdowns have another ul/li set up within the parent li. Render in the same way as a normal link -->
                             {% if hasChild %}
@@ -51,6 +54,9 @@
                             {% endif %}
                         </li>
                     {% endfor %}
+                    <a  id="contact-hidden" href="/contact" class="cs-li-link">
+                        Contact
+                      </a>
                 </ul>
             </div>
         </nav>
