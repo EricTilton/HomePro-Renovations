@@ -11,6 +11,7 @@ tags:
   - Interior Design
   - Functional Living
   - Home Improvement
+  - featured
 image: /assets/images/blog/pexels-pixabay-276724-1-.jpg
 imageAlt: Modern Home
 ---
