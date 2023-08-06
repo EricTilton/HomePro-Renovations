@@ -1,5 +1,5 @@
 ---
-title: Modern Minimalism Meets Timeless Elegance
+title: Modern Minimalism Meets Elegance
 description: Discover the captivating blend of modern minimalism and timeless
   elegance in home design. Explore the principles of simplicity, sophistication,
   and functional beauty as we guide you through transforming your living space
@@ -17,7 +17,7 @@ imageAlt: Minimilist-Home
 ---
 <!--StartFragment-->
 
-**Elevate Your Home: Modern Minimalism Meets Timeless Elegance**
+**Elevate Your Home: Modern Minimalism Meets Elegance**
 
 *By Sophia Mitchell*
 
