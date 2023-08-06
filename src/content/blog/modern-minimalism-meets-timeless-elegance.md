@@ -12,6 +12,7 @@ tags:
   - Interior Decor
   - Timeless Elegance
   - Modern Living
+  - Featured
 image: /assets/images/blog/pexels-medhat-ayad-447592.jpg
 imageAlt: Minimilist-Home
 ---
